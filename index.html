@@ -752,20 +752,11 @@
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" S>
 
-              <div>
-
-              <button id="download-pdf">Descargar como PDF</button>
-              <script>
-                const downloadPdfButton = document.getElementById("download-pdf");
-                downloadPdfButton.addEventListener("click", () => {
-                  const pdf = new jsPDF('p', 'pt', 'letter');
-                  pdf.addHTML(document.body, () => {
-                    pdf.save('view.pdf');
-                  });
-                });
-              </script>
-              <div>
-
+              <div style="text-align: center;">
+                <button type="button" class="btn btn-primary">
+                  <a href="assets/cv.pdf" download>Descargar CV como PDF</a>
+                </button>
+              </div>
             </div>
 
           </div>
